@@ -1,0 +1,341 @@
+$mobile-max-width: 767px;
+$tablet-min-width: 768px;
+$tablet-max-width: 1199px;
+$desktop-min-width: 1200px;
+@mixin mobile-only {
+    @media (max-width: $mobile-max-width) { @content; }
+}
+
+@mixin tablet-only {
+    @media (min-width: $tablet-min-width) and (max-width: $tablet-max-width) { @content; }
+}
+
+@mixin desktop-only {
+    @media (min-width: $desktop-min-width) { @content; }
+}
+
+@mixin display-flex {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+}
+
+@mixin px-to-rem($pxValue, $standard-size: 16) {
+    font-size: $pxValue/$standard-size + rem;
+}
+
+//Font mixins
+@mixin avenir-heavy-font($fontsize: null) {
+    font-family: Avenir_heavy, Open Sans, Arial, sans-serif;
+    font-size: $fontsize;
+    font-weight: normal;
+}
+
+@mixin avenir-book-font($fontsize: null) {
+    font-family: Avenir_book, Open Sans, Arial, sans-serif;
+    font-size: $fontsize;
+    font-weight: normal;
+}
+
+@mixin avenir-medium-font($fontsize: null) {
+    font-family: Avenir_medium, Open Sans, Arial, sans-serif;
+    font-size: $fontsize;
+    font-weight: normal;
+}
+
+@mixin avenir-roman-font($fontsize: null) {
+    font-family: Avenir_roman, Open Sans, Arial, sans-serif;
+    font-size: $fontsize;
+    font-weight: normal;
+}
+
+@mixin courgette-regular-font($fontsize: null) {
+    font-family: courgetteregular, Open Sans, Arial, sans-serif;
+    font-size: $fontsize;
+    font-weight: normal;
+}
+
+@mixin heading-font($type, $is-bold: false) {
+
+    @if $type == 'heading-heavy-1' {
+        @include desktop-only {
+            @include avenir-heavy-font(58px);
+            line-height: 56px;
+        }
+
+        @include tablet-only {
+            @include avenir-heavy-font(42px);
+            line-height: 44px;
+        }
+
+        @include mobile-only {
+            @include avenir-heavy-font(24px);
+            line-height: 40px;
+        }
+    }
+
+    @if $type == 'heading-heavy-2' {
+        @include desktop-only {
+            @include avenir-heavy-font(28px);
+            line-height: 34px;
+        }
+
+        @include tablet-only {
+            @include avenir-heavy-font(24px);
+            line-height: 30px;
+        }
+
+        @include mobile-only {
+            @include avenir-heavy-font(18px);
+            line-height: 24px;
+        }
+    }
+
+    @if $type == 'heading-heavy-3' {
+        @include desktop-only {
+            @include avenir-heavy-font(18px);
+            line-height: 24px;
+        }
+
+        @include tablet-only {
+            @include avenir-heavy-font(14px);
+            line-height: 20px;
+        }
+
+        @include mobile-only {
+            @include avenir-heavy-font(14px);
+            line-height: 20px;
+        }
+    }
+
+    @if $type == 'heading-heavy-4' {
+        @include desktop-only {
+            @include avenir-heavy-font(18px);
+            line-height: 24px;
+        }
+
+        @include tablet-only {
+            @include avenir-heavy-font(16px);
+            line-height: 24px;
+        }
+
+        @include mobile-only {
+            @include avenir-heavy-font(16px);
+            line-height: 24px;
+        }
+    }
+
+    @if $type == 'heading-heavy-5' {
+        @include desktop-only {
+            @include avenir-heavy-font(18px);
+            line-height: 26px;
+        }
+
+        @include tablet-only {
+            @include avenir-heavy-font(18px);
+            line-height: 26px;
+        }
+
+        @include mobile-only {
+            @include avenir-heavy-font(18px);
+            line-height: 26px;
+        }
+    }
+
+    @if $type == 'heading-book-1' {
+        @include desktop-only {
+            @include avenir-book-font(28px);
+            line-height: 34px;
+            }
+
+        @include tablet-only {
+            @include avenir-book-font(24px);
+            line-height: 30px;
+        }
+
+        @include mobile-only {
+            @include avenir-book-font(18px);
+            line-height: 24px;
+        }
+    }
+
+    @if $type == 'heading-book-2' {
+        @include desktop-only {
+            @include avenir-book-font(24px);
+            line-height: 32px;
+            }
+
+        @include tablet-only {
+            @include avenir-book-font(20px);
+            line-height: 30px;
+        }
+
+        @include mobile-only {
+            @include avenir-book-font(14px);
+            line-height: 28px;
+        }
+    }
+
+    @if $type == 'heading-medium-1' {
+        @include desktop-only {
+            @include avenir-medium-font(24px);
+            line-height: 32px;
+            }
+
+        @include tablet-only {
+            @include avenir-medium-font(24px);
+            line-height: 28px;
+        }
+
+        @include mobile-only {
+            @include avenir-medium-font(24px);
+            line-height: 28px;
+        }
+    }
+
+    @if $type == 'heading-roman-1' {
+        @include desktop-only {
+            @include avenir-roman-font(30px);
+            line-height: 34px;
+        }
+
+        @include tablet-only {
+            @include avenir-roman-font(30px);
+            line-height: 34px;
+        }
+
+        @include mobile-only {
+            @include avenir-roman-font(28px);
+            line-height: 34px;
+        }
+    }
+
+    @if $type == 'heading-roman-2' {
+        @include desktop-only {
+            @include avenir-roman-font(18px);
+            line-height: 32px;
+        }
+
+        @include tablet-only {
+            @include avenir-roman-font(16px);
+            line-height: 24px;
+        }
+
+        @include mobile-only {
+            @include avenir-roman-font(14px);
+            line-height: 24px;
+        }
+    }
+    
+    @if $type == 'heading-roman-3' {
+        @include desktop-only {
+            @include avenir-roman-font(18px);
+            line-height: 32px;
+        }
+
+        @include tablet-only {
+            @include avenir-roman-font(18px);
+            line-height: 24px;
+        }
+
+        @include mobile-only {
+            @include avenir-roman-font(16px);
+            line-height: 24px;
+        }
+    }
+    
+}
+
+@mixin link-font() {
+    @include avenir-heavy-font(16px);
+    line-height: (24px);
+}
+
+
+@mixin text-font($type, $font-size, $line-height) {
+    @if $type == 'text-roman' {
+        @include avenir-roman-font($font-size);
+        line-height: ($line-height);
+    }
+    
+    @if $type == 'text-heavy' {
+        @include avenir-heavy-font($font-size);
+        line-height: ($line-height);
+    }
+    
+    @if $type == 'text-book' {
+        @include avenir-book-font($font-size);
+        line-height: ($line-height);
+    }
+    
+    @if $type == 'text-medium' {
+        @include avenir-medium-font($font-size);
+        line-height: ($line-height);
+    }
+
+    @if $type == 'text-courgette' {
+        @include courgette-regular-font($font-size);
+        line-height: ($line-height);
+    }
+}
+
+@mixin  thin-scrollbar {
+    $scroll-bg: #d8d8d8;
+    $scroll-color: #111;
+
+    scrollbar-color:  $scroll-color $scroll-bg;
+    scrollbar-width: thin;
+    &::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: $scroll-bg;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar
+    {
+        background-color: $scroll-bg;
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: $scroll-color;
+        border-radius: 10px;
+    }
+}
+
+@mixin textWithIllustration {
+
+    @include desktop-only {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    @include tablet-only {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    @include mobile-only {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@mixin caption {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+@mixin component-layout {
+    max-width: 1440px;
+    width: 100%;
+}
+
+@mixin layout-padding {
+    padding-left: 70px;
+    padding-right: 70px;
+}
