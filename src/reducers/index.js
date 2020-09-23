@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import { increament } from './myReducer';
+import { homeDataReducer } from './homeReducer';
 
 export default combineReducers({
-    increament: increament
+    homeDataReducer
 });

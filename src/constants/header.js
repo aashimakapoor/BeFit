@@ -1,4 +1,6 @@
 export const getHeaderNavLabels = (t) => ({
+    title: 'BE FIT',
+    quote: 'Strive for Progress, Not for Perfection',
     NAV_ITEMS: [
       {
         label: 'Home',
@@ -14,7 +16,7 @@ export const getHeaderNavLabels = (t) => ({
       },
       {
         label: 'Workouts',
-        link: "/workout",
+        link: "/workouts",
       },
       {
         label: 'Contact Us',

@@ -1,0 +1,12 @@
+@import '../../../styles/index.scss';
+
+.bf-button {
+    &__is-btn {
+        background-color: $bf-color-white;
+        border: none;
+        border-radius: 10px;
+        padding: $bf-space-15 $bf-space-20;
+        margin-top: 25px;
+        float: right;
+    }
+}
