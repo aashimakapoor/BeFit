@@ -36,7 +36,7 @@
     position: fixed;
     background-color: $bf-color-black;
     padding: $bf-space-5 $bf-space-30 $bf-space-5 $bf-space-30;
-    
+    border-bottom: none;
 
     .navbar {
         padding: 0;
@@ -50,6 +50,7 @@
 .not-fixed {
     padding: $bf-space-18 $bf-space-30 $bf-space-10 $bf-space-30;
     // background-color: $bf-color-lightBlack;
+    border-bottom: 1px solid $bf-color-white-shade1;
     position: absolute;
 }
 

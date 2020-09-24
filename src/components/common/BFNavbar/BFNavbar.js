@@ -21,7 +21,7 @@ class BFNavbar extends React.Component {
 
     componentDidMount() {
         document.addEventListener('scroll', () => {
-            const isTop = window.scrollY < 120;
+            const isTop = window.scrollY < 80;
             if (isTop !== this.state.isTop) {
                 this.setState({ navClass: 'fixed' })
             } else {

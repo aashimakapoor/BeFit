@@ -5,8 +5,8 @@
     -moz-box-shadow: 7px 12px 43px -12px rgba(0,0,0,0.75);
     box-shadow: 7px 12px 43px -12px rgba(0,0,0,0.75);
     border-top: 5px solid $bf-gradient-shade1;
+    border-left: 5px solid $bf-gradient-shade1;
     border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
 
     &__image {
         width: 100%;
