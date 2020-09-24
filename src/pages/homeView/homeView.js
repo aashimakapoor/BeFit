@@ -6,7 +6,10 @@ import { connect } from 'react-redux';
 // actions
 import { getHomeData } from "./../../actions/homeActions";
 // components
-import HealthyTipsSection from "../../components/containers/healthyTipsSection/healthyTipsSection";
+import HealthTipsSection from "../../components/containers/healthTipsSection/healthTipsSection";
+import HealthArticlesSection from "../../components/containers/healthArticlesSection/healthArticlesSection";
+
+const blockName = "home-view";
 
 class HomeView extends React.Component {
   componentDidMount() {
@@ -16,8 +19,16 @@ class HomeView extends React.Component {
 
   render() {
     const { homeData } = this.props;
+    const homeDataContainer = homeData && homeData.homeDataContainer;
+    const { healthyTips, healthArticles } = homeDataContainer;
+    
     return (
-      <HealthyTipsSection homeData={homeData} />
+      <>
+        <HealthTipsSection healthyTips={healthyTips} />
+        <section className={`${blockName}__centre`}>
+          <HealthArticlesSection healthArticles={healthArticles} />
+        </section>
+      </>
     ); 
   }
 }

@@ -2,11 +2,13 @@
 
 .bf-button {
     &__is-btn {
-        background-color: $bf-color-white;
-        border: none;
-        border-radius: 10px;
-        padding: $bf-space-15 $bf-space-20;
+        border: 2px solid $bf-color-white;
+        color: $bf-color-white;
+        background-color: $bf-gradient-shade1;
+        padding: $bf-space-15 $bf-space-50;
         margin-top: 25px;
         float: right;
+        transition-duration: 0.4s;
+        text-align: center;
     }
 }
