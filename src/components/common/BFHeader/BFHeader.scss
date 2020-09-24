@@ -2,15 +2,16 @@
 
 .bf-header {
     position: relative;
-    background-image: url('../../../assets/food2.jpg');
-    height: 555px;
+    background-image: url('../../../assets/bg10.jpg');
+    height: 710px;
     background-repeat: no-repeat;
     background-size: cover;
 
     &__layer {
-        background-image:linear-gradient(to left, $bf-gradient-shade1 0%, $bf-gradient-shade2 40%, $bf-color-black 70%, $bf-color-black 100%);
-        height: 540px;
-        opacity: 0;
+        background-color: $bf-color-lightBlack;
+        // background-image:linear-gradient(to left, $bf-gradient-shade1 0%, $bf-gradient-shade2 40%, $bf-color-black 70%, $bf-color-black 100%);
+        height: 710px;
+        opacity: 0.7;
     }
 
     &__quote {
@@ -23,6 +24,7 @@
         left: 50%;
         top: 50%;
         transform: translateX(-50%);
+        text-align: center;
     }
 }
 
