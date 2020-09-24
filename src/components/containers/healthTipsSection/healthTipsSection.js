@@ -1,6 +1,6 @@
 // @vendor
 import React from "react";
-import "./healthyTipsSection.scss";
+import "./healthTipsSection.scss";
 import {Row, Col} from "react-bootstrap";
 // components
 import BFButton from "./../../common/BFButton/BFButton";
@@ -10,7 +10,7 @@ const blockName = "healthy-tips-section";
 class HealthyTipsSection extends React.Component {
     
     render() {
-        const { healthyTips } = this.props.homeData.homeDataContainer;
+        const { healthyTips } = this.props;
         const title = healthyTips && healthyTips.title;
         const description = healthyTips && healthyTips.description;
         const lintText = healthyTips && healthyTips.lintText;

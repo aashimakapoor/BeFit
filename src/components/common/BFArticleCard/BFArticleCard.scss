@@ -1,0 +1,31 @@
+@import '../../../styles/index.scss';
+
+.bf-article-card {
+    -webkit-box-shadow: 7px 12px 43px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 12px 43px -12px rgba(0,0,0,0.75);
+    box-shadow: 7px 12px 43px -12px rgba(0,0,0,0.75);
+    border-top: 5px solid $bf-gradient-shade1;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    &__image {
+        width: 100%;
+        margin-bottom: 10px;
+        min-height: 185px;
+        max-height: 185px;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    &__link {
+        color: $bf-gradient-shade1;
+        text-decoration: none;
+    }
+
+    &__link:hover {
+        color: $bf-gradient-shade1;
+    }
+}

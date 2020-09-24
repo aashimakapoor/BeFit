@@ -1,2 +1,9 @@
+@import '../../styles/index.scss';
 
-
+.home-view {
+    &__centre {
+        width: 80%;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}

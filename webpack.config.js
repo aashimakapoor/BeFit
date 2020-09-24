@@ -1,4 +1,11 @@
+const path = require('path');
+
 module.exports = {
+    output: {
+        path: path.resolve(__dirname, 'dest'),
+        filename: 'main.js',
+        publicPath: '/'
+    },
     module: {
         devServer: {
             historyApiFallback: true,
