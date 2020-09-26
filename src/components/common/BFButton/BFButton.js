@@ -1,7 +1,6 @@
 // @vendor
 import React from "react";
 import "./BFButton.scss";
-import sn from "classnames";
 import PropTypes from 'prop-types';
 
 const blockName = "bf-button";
@@ -12,7 +11,7 @@ class BFButton extends React.Component {
         let className = isLink ? "is-link" : "is-btn";
 
         return <button className={`${blockName}`, `${blockName}__${className}`}>
-            {btnText}
+            <span>{btnText}</span>
             {hasIcon && <i className={iconClass} />}
         </button>
     }

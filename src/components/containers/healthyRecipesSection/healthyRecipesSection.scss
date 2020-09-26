@@ -1,0 +1,19 @@
+@import '../../../styles/index.scss';
+
+.healthy-recipes-section {
+    &__news-title {
+        padding: 10px 0 10px 15px;
+        margin-bottom: $bf-space-35;
+        background-color: $bf-gradient-shade1;
+        position: relative;
+    }
+
+    .arrow-down {
+        position: absolute;
+        bottom: -10px;
+        left: 41px;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid $bf-gradient-shade1;
+      }
+}

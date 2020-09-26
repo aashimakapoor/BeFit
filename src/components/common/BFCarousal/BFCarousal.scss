@@ -1,0 +1,63 @@
+@import "../../../styles/index.scss";
+
+.bf-carousal {
+    &__item {
+        text-align: center;
+    }
+
+    &__image {
+        width: 231px;
+        height: 231px;
+        border-radius: 50%;
+        border: 8px solid $bf-gradient-shade1;
+    }
+
+    &__name {
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-top: $bf-space-15;
+        transition: 0.3s;
+        line-height: 45px;
+        cursor: pointer;
+    }
+
+    &__name:hover { 
+        color: $bf-gradient-shade1;
+    }
+
+    &__ingredients-title {
+        font-size: 16px;
+    }
+
+    &__ingredients-list {
+        span {
+            word-wrap: break-word;
+        }
+    }
+
+    button {
+        border: none;
+        color: $bf-color-black;
+        background-color: $bf-gradient-shade1;
+        padding:  $bf-space-10 $bf-space-15;
+        position: absolute;
+        top: 22%;
+    }
+
+    &__prev-btn {
+        margin-left: $bf-space-15;
+    }
+
+    &__next-btn {
+        margin-right: $bf-space-15;
+    }
+
+    button:focus {
+        outline: none;
+    }
+    &__ingredients-list {
+        
+    }
+}

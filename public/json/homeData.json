@@ -1,10 +1,31 @@
 {
     "healthyTips": {
-        "title": "Eight Tips for Healthy Eating",
+        "title": "Tips for Healthy Body",
         "description": "Eat the right amount of calories for how active you are, so that you balance the energy you consume with the energy you use. If you eat or drink too much, you'll put on weight. If you eat and drink too little, you'll lose weight.",
         "lintText": "Learn More"
     },
     "healthArticles": [
+        {
+            "imgUrl": "http://themes.wplook.com/html/fitnesslife/images/temp/360x180_7.jpg",
+            "imgAlt": "Yoga",
+            "title": "Yoga Poses",
+            "description": "Eat the right amount of calories for how active you are, so that you balance the energy you consume with the energy you use. If you eat or drink too much, you'll put on weight. If you eat and drink too little, you'll lose weight.",
+            "lintText": "Read More"
+        },
+        {
+            "imgUrl": "http://themes.wplook.com/html/fitnesslife/images/temp/360x180_3.jpg",
+            "imgAlt": "cardio",
+            "title": "Burning More Calories",
+            "description": "Eat the right amount of calories for how active you are, so that you balance the energy you consume with the energy you use. If you eat or drink too much, you'll put on weight. If you eat and drink too little, you'll lose weight.",
+            "lintText": "Read More"
+        },
+        {
+            "imgUrl": "http://themes.wplook.com/html/fitnesslife/images/temp/360x180_5.jpg",
+            "imgAlt": "Weight Lifting",
+            "title": "Weight Lifting",
+            "description": "Eat the right amount of calories for how active you are, so that you balance the energy you consume with the energy you use. If you eat or drink too much, you'll put on weight. If you eat and drink too little, you'll lose weight.",
+            "lintText": "Read More"
+        },
         {
             "imgUrl": "https://blog.medisys.ca/hubfs/healthy%20food%20swaps-1.jpg",
             "imgAlt": "Food Swap",
@@ -25,6 +46,56 @@
             "title": "What's your BMI",
             "description": "Eat the right amount of calories for how active you are, so that you balance the energy you consume with the energy you use. If you eat or drink too much, you'll put on weight. If you eat and drink too little, you'll lose weight.",
             "lintText": "Read More"
+        }
+    ],
+    "healthyRecipes": [
+        {
+            "imgUrl": "https://i2.wp.com/www.eatthis.com/wp-content/uploads/2019/01/healthy-greek-salad.jpg?fit=1200%2C879&ssl=1",
+            "imgAlt": "Chicken Salad",
+            "name": "Chicken Salad",
+            "ingredients": ["Chicken", "Chickpeas", "Onion", "Cucumber", "Capsicum"] 
+        },
+        {
+            "imgUrl": "https://i2.wp.com/www.eatthis.com/wp-content/uploads/2019/11/whole-grain-pancake-stack.jpg?fit=1200%2C879&ssl=1",
+            "imgAlt": "Pancakes",
+            "name": "Pancakes",
+            "ingredients": ["Eggs", "Wheat Flour", "Banana", "Oil", "Fruits", "Baking Bowder"]
+        },
+        {
+            "imgUrl": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/155469.jpg?output-format=auto&output-quality=auto",
+            "imgAlt": "Beans Rice",
+            "name": "Beans Salad",
+            "ingredients": ["Beans", "Tomato", "Onion", "Cucumber", "Jalepeno", "Lemon", "Coriender"] 
+        },
+        {
+            "imgUrl": "https://www.thelastfoodblog.com/wp-content/uploads/2019/03/portobello-mushroom-sandwich-with-basil-500x500.jpg",
+            "imgAlt": "Mushroom Burger",
+            "name": "Mushroom Burger",
+            "ingredients": ["Bun", "Mushroom", "Onion", "Cucumber", "Olives", "Jalepeno", "Capsicum"] 
+        },
+        {
+            "imgUrl": "https://www.pipingpotcurry.com/wp-content/uploads/2017/08/Masala-Khichdi-Instant-Pot-Pressure-Cooker--1024x768.jpg",
+            "imgAlt": "Khichdi",
+            "name": "Khichdi",
+            "ingredients": ["Dal", "Rice", "Tomato", "Onion", "Oil", "Garlic-Ginger paste"] 
+        },
+        {
+            "imgUrl": "https://www.shelovesbiscotti.com/wp-content/uploads/2020/06/Healthy-Fruit-Salad-Recipe-5.jpg",
+            "imgAlt": "Fruit Salad",
+            "name": "Fruit Salad",
+            "ingredients": ["Apple", "Banana", "Kiwi", "Watermelon", "Mango", "Grapes", "Papaya"] 
+        },
+        {
+            "imgUrl": "https://images.herzindagi.info/image/2020/Mar/upma-for-health.jpg",
+            "imgAlt": "Upma",
+            "name": "Upma",
+            "ingredients": ["Eggs", "Wheat Flour", "Banana", "Oil", "Fruits", "Baking Bowder"]
+        },
+        {
+            "imgUrl": "https://thumbs.dreamstime.com/z/golden-omelette-vegetarian-filling-healthy-omelette-fried-mushrooms-fresh-tomatoes-dill-plate-closeup-mushroom-94291374.jpg",
+            "imgAlt": "Vegetable Omelette",
+            "name": "Vegetable Omelette",
+            "ingredients": ["Dal", "Rice", "Tomato", "Onion", "Oil", "Garlic-Ginger paste"] 
         }
     ]
 }
