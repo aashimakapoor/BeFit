@@ -13,4 +13,10 @@
     &__description {
         font-weight: normal; 
     }
+
+    .bf-button {
+        &__is-btn {
+            float: right;
+        }
+    }
 }

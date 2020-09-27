@@ -5,10 +5,9 @@
         font-weight: bold;;
         border: 3px solid $bf-color-black;
         color: $bf-color-black;
-        background-color: $bf-gradient-shade1;
+        background-color: transparent;
         padding: $bf-space-15 $bf-space-50;
         margin-top: 25px;
-        float: right;
         transition: all 0.5s;
         text-align: center;
     }

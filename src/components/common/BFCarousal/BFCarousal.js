@@ -4,13 +4,13 @@ import "./BFCarousal.scss";
 import PropTypes from 'prop-types';
 import ItemsCarousel from 'react-items-carousel';
 // constants
-import { getHomevPageConstants } from "./../../../constants/homePage";
+import { getHomePageConstants } from "./../../../constants/homePage";
 
 const blockName = "bf-carousal";
 
 const BFCarousal = (props) => {
     const { carousalList } = props;
-    const { ingredientsLabel, chevronWidth } = getHomevPageConstants();
+    const { ingredientsLabel, chevronWidth } = getHomePageConstants();
     const [activeItemIndex, setActiveItemIndex] = useState(0);
 
     return (

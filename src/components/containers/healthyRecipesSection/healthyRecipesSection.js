@@ -2,7 +2,7 @@
 import React from "react";
 import "./healthyRecipesSection.scss";
 // constants
-import { getHomevPageConstants } from "../../../constants/homePage";
+import { getHomePageConstants } from "../../../constants/homePage";
 // components
 import BFTitle from "../../common/BFTitle/BFTitle";
 import BFCarousal from "../../common/BFCarousal/BFCarousal";
@@ -13,7 +13,7 @@ class HealthyRecipesSection extends React.Component {
     
     render() {
         const { healthyRecipes } = this.props;
-        const { recipesTitle } = getHomevPageConstants();
+        const { recipesTitle } = getHomePageConstants();
 
         return (
             <section className={`${blockName}`}>

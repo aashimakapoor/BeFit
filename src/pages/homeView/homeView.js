@@ -9,6 +9,7 @@ import { getHomeData } from "./../../actions/homeActions";
 import HealthTipsSection from "../../components/containers/healthTipsSection/healthTipsSection";
 import HealthArticlesSection from "../../components/containers/healthArticlesSection/healthArticlesSection";
 import HealthyRecipesSection from "../../components/containers/healthyRecipesSection/healthyRecipesSection";
+import BMRCalculatorSection from "../../components/containers/bmrCalculatorSection/bmrCalculatorSection";
 
 const blockName = "home-view";
 
@@ -29,6 +30,7 @@ class HomeView extends React.Component {
         <section className={`${blockName}__centre`}>
           <HealthArticlesSection healthArticles={healthArticles} />
           <HealthyRecipesSection healthyRecipes={healthyRecipes} />
+          <BMRCalculatorSection />
         </section>
       </>
     ); 

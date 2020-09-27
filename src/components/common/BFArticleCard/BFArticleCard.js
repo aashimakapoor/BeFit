@@ -42,14 +42,15 @@ class BFArticleCard extends React.Component {
 }
 
 BFArticleCard.defaultProps = {
-    noOfColumnsDesktop: 3,
-    noOfColumnsMobile: 2,
-    noOfColumnsTablet: 1, 
     hasTransitionEffect: true,
+    noOfColumnsDesktop: 3,
+    noOfColumnsMobile: 1,
+    noOfColumnsTablet: 2, 
 }
 
 BFArticleCard.propTypes = {
     description: PropTypes.string,
+    hasTransitionEffect: PropTypes.bool,
     imgAlt: PropTypes.string,
     imgUrl: PropTypes.string,
     linkText: PropTypes.string,
@@ -57,8 +58,6 @@ BFArticleCard.propTypes = {
     noOfColumnsMobile: PropTypes.number,
     noOfColumnsTablet: PropTypes.number, 
     title: PropTypes.string, 
-    hasTransitionEffect: PropTypes.bool,
-
 }
 
 export default BFArticleCard;

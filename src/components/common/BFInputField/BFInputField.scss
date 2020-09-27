@@ -1,0 +1,26 @@
+@import '../../../styles/index.scss';
+
+.bf-input-field {
+    padding-bottom: $bf-space-20;
+
+    &__label {
+        font-weight: bold;
+        font-family: fantasy;
+        font-size: 28px;
+    }
+
+    &__label:hover {
+        color: $bf-gradient-shade1;
+        transition: 0.3s;
+    }
+
+    &__input {
+        border: 5px solid $bf-gradient-shade1;
+        width: 100%;
+        font-size: 28px;
+    }
+
+    &__input:focus {
+        outline: none;
+    }
+}

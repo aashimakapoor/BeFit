@@ -6,7 +6,7 @@ import {Row} from "react-bootstrap";
 import BFArticleCard from "./../../common/BFArticleCard/BFArticleCard";
 import BFTitle from "../../common/BFTitle/BFTitle";
 // constants
-import { getHomevPageConstants } from "./../../../constants/homePage";
+import { getHomePageConstants } from "./../../../constants/homePage";
 
 const blockName = "health-articles-section";
 
@@ -14,7 +14,7 @@ class HealthArticlesSection extends React.Component {
     
     render() {
         const { healthArticles } = this.props;
-        const { newstitle } = getHomevPageConstants();
+        const { newstitle } = getHomePageConstants();
         return (
             <section className={`${blockName}`}>
                 <BFTitle title={newstitle} />
