@@ -25,8 +25,6 @@ class HealthyTipsSection extends React.Component {
                     <Col xs={12} sm={4} className={`${blockName}__right-section`}>
                         <BFButton 
                             btnText={lintText} 
-                            hasIcon={true}
-                            iconClass="fab fa-leanpub"
                         />
                     </Col>
                 </Row>

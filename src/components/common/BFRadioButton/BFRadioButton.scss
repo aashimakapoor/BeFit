@@ -20,10 +20,6 @@
         font-family: fantasy;
         font-size: 25px;
     }
-    [type="radio"]:checked + label,
-    [type="radio"]:not(:checked) + label{
-        margin-right: 70px;
-    }
 
     [type="radio"]:checked + label:before,
     [type="radio"]:not(:checked) + label:before {

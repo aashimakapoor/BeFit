@@ -2,7 +2,6 @@
 import React from "react";
 import "./BFRadioButton.scss";
 import PropTypes from 'prop-types';
-import { Col } from "react-bootstrap";
 
 const blockName = "bf-radio-button";
 
@@ -10,30 +9,31 @@ class BFRadioButton extends React.Component {
     constructor(props) {
         super(props);
     }
-    onChange(e) {
-        const { onInputChange, fieldName } = this.props;
-
-        onInputChange(fieldName,e.target.value);
-    }
+    // onChange(e) {
+    //     const { onSelectRadio } = this.props;
+    //     console.log(e);
+    //     onSelectRadio(e.target.value);
+    // }
     render() {
         const { 
-            id,
-            inputValue,
-            labelText,
+            value,
+            label,
             name,
             type,
+            onRadioChange,
          } = this.props;
 
         return (
                 <span className={blockName}>
                     <input 
                         className={`${blockName}__input`} 
-                        id={id}
+                        id={value}
                         name={name}
                         type={type}
-                        value={inputValue}
+                        value={value}
+                        onChange={onRadioChange}
                     />  
-                    <label for={id} className={`${blockName}__label`} >{labelText}</label>
+                    <label for={value} className={`${blockName}__label`} >{label}</label>
                 </span>
         )
     }
@@ -41,10 +41,11 @@ class BFRadioButton extends React.Component {
 
 BFRadioButton.propTypes = {
     id: PropTypes.string,
-    inputValue: PropTypes.string,
-    labelText: PropTypes.string,
+    value: PropTypes.string,
+    label: PropTypes.string,
     name: PropTypes.string,
     type: PropTypes.string,
+    onRadioChange: PropTypes.func,
 }
 
 export default BFRadioButton;

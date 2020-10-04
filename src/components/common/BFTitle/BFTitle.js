@@ -7,11 +7,16 @@ const blockName = "bf-title";
 
 class BFTitle extends React.Component {
     render() {
-        const { title } = this.props;
+        const { title, description } = this.props;
         
-        return  <h2 className={`${blockName}`}>
-        {title}<span className={`${blockName}__arrow-down`} />
-    </h2>
+        return ( 
+            <section className={blockName}>
+                <h2 className={`${blockName}__heading`}>
+                    {title}<span className={`${blockName}__arrow-down`} />
+                </h2>
+                {description && <p className={`${blockName}__desc`}>{description}</p>}
+            </section>
+        )
     }
 }
 

@@ -17,7 +17,21 @@
     &__input {
         border: 5px solid $bf-gradient-shade1;
         width: 100%;
-        font-size: 28px;
+        font-size: 20px;
+        padding: $bf-space-10;
+    }
+
+    &__border-bottom {
+        border: none;
+        border-bottom: 3px solid $bf-gradient-shade1;
+    }
+
+    &__input::placeholder {
+        text-align: right;
+    }
+
+    &__border-bottom::placeholder {
+        text-align: left;
     }
 
     &__input:focus {

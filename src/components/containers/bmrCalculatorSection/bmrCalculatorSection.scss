@@ -1,7 +1,7 @@
 @import "../../../styles/index.scss";
 
 .bmr-calculator-section {
-    margin-bottom: $bf-space-30;
+    margin-bottom: $bf-space-90;
     padding-bottom: $bf-space-30;
 
     &__image {
@@ -10,10 +10,16 @@
         }
     }
 
-    &__gender-title {
+    &__gender-title,
+    &__result-text,
+    &__bmr {
         font-weight: bold;
         font-family: fantasy;
         font-size: 28px;
+    }
+
+    &__gender-title:hover { 
+        color: $bf-gradient-shade1;
     }
 
     &__form {
@@ -22,5 +28,31 @@
 
    &__calculate-button {
        text-align: center;
+   }
+
+   &__result-section {
+       margin-top: $bf-space-30;
+   }
+
+   &__result-text {
+        background-color: $bf-gradient-shade1;
+        text-align: center;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding-top: $bf-space-10;
+   }
+
+   &__calorie-need {
+       font-size: 18px;
+   }
+
+   .table-dark {
+       background-color: $bf-gradient-shade1;
+       color: $bf-color-black;
+   }
+
+   .bf-radio-button:nth-of-type(2) [type="radio"]:checked + label, 
+   .bf-radio-button:nth-of-type(2) [type="radio"]:not(:checked) + label:nth-of-type(1) {
+       float: right;
    }
 }

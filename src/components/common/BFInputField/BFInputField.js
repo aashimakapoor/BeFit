@@ -16,11 +16,14 @@ class BFInputField extends React.Component {
     }
     render() {
         const { 
+            bottomBorder,
             hasLabel,
             inputValue,
             labelText,
+            placeholder,
             type,
          } = this.props;
+         let customClass = bottomBorder && 'border-bottom'; 
 
         return (
                 <section className={blockName}>
@@ -29,9 +32,10 @@ class BFInputField extends React.Component {
                     </section>}
                     <section className={`${blockName}__input-section`}>
                         <input 
-                            className={`${blockName}__input`} 
+                            className={`${blockName}__input ${blockName}__${customClass}`} 
                             value={inputValue}
                             onChange ={(e) => this.onChange(e)}
+                            placeholder={placeholder}
                             type={type}
                         />
                     </section>
@@ -41,13 +45,16 @@ class BFInputField extends React.Component {
 }
 
 BFInputField.defaultProps = {
+    bottomBorder: false,
     hasLabel: true,
 }
 
 BFInputField.propTypes = {
+    bottomBorder: PropTypes.bool,
     hasLabel: PropTypes.bool,
     inputValue: PropTypes.string,
     labelText: PropTypes.string,
+    placeholder: PropTypes.string,
     type: PropTypes.string,
 }
 

@@ -1,0 +1,52 @@
+@import '../../../styles/index.scss';
+
+.bf-footer {
+    padding: $bf-space-30 $bf-space-60;
+    position: relative;
+    border-top: 5px solid $bf-color-black;
+    background-color: $bf-gradient-shade1 ;
+
+    &__logo {
+        letter-spacing: 20px;
+        font-size: 38px;
+        font-family: fantasy;
+        font-weight: bold;
+    }
+
+    &__copyright-text {
+        font-weight: bold;
+        font-size: 14px
+    }
+
+    &__contact-us-heading {
+        font-size: 38px;
+        font-family: fantasy;
+        font-weight: bold;
+        text-align: center;
+        color: $bf-gradient-shade1;
+    }
+
+    &__contact-us-section {
+        background-color: $bf-color-white;
+        position: absolute;
+        top: -70px;
+        left: 0;
+        right: 0;
+        padding: $bf-space-15 $bf-space-50;
+        border: 1px dotted $bf-gradient-shade1;
+    }
+
+    .bf-title {
+        margin-bottom: $bf-space-40;
+        &__heading {
+            padding: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@include mobile-only {
+    .bf-footer {
+       
+    }
+}

@@ -42,7 +42,7 @@ class BFNavbar extends React.Component {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ml-auto">
                             {NAV_ITEMS.map((nav, index) => {
-                                return <Nav.Link eventKey={index} href={nav.link}>{nav.label}</Nav.Link>
+                                return <Nav.Link eventKey={index} href={`#${nav.link}`}>{nav.label}</Nav.Link>
                             })}
                         </Nav>
                     </Navbar.Collapse>
