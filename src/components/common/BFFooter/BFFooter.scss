@@ -4,7 +4,13 @@
     padding: $bf-space-30 $bf-space-60;
     position: relative;
     border-top: 5px solid $bf-color-black;
-    background-color: $bf-gradient-shade1 ;
+    border-bottom: 5px solid $bf-color-black;
+    background-color: $bf-gradient-shade1;
+    height: 435px;
+
+    &__right {
+        padding-left: $bf-space-35;
+    }
 
     &__logo {
         letter-spacing: 20px;
@@ -19,11 +25,11 @@
     }
 
     &__contact-us-heading {
-        font-size: 38px;
+        font-size: 42px;
         font-family: fantasy;
         font-weight: bold;
         text-align: center;
-        color: $bf-gradient-shade1;
+        color: $bf-color-black;
     }
 
     &__contact-us-section {
@@ -34,6 +40,10 @@
         right: 0;
         padding: $bf-space-15 $bf-space-50;
         border: 1px dotted $bf-gradient-shade1;
+    }
+
+    &__send-button {
+        text-align: center;
     }
 
     .bf-title {

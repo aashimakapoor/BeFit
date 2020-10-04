@@ -9,11 +9,6 @@
         font-size: 28px;
     }
 
-    &__label:hover {
-        color: $bf-gradient-shade1;
-        transition: 0.3s;
-    }
-
     &__input {
         border: 5px solid $bf-gradient-shade1;
         width: 100%;

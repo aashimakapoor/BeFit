@@ -89,7 +89,7 @@ class BFFooter extends React.Component {
                         type="text"
                     />
                 </form>
-                <section className={`${blockName}__calculate-button`}>
+                <section className={`${blockName}__send-button`}>
                     <BFButton 
                         btnText={sendBtnText} 
                         handleOnClick={this.handleSendBtn}
