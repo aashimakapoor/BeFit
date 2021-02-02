@@ -47,8 +47,8 @@
        color: $bf-color-black;
    }
 
-   .bf-radio-button:nth-of-type(2) [type="radio"]:checked + label, 
-   .bf-radio-button:nth-of-type(2) [type="radio"]:not(:checked) + label:nth-of-type(1) {
-       float: right;
+   .bf-radio-button:nth-of-type(1) [type="radio"]:checked + label, 
+   .bf-radio-button:nth-of-type(1) [type="radio"]:not(:checked) + label:nth-of-type(1) {
+        margin-right: $bf-space-30;
    }
 }

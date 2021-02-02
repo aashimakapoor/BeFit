@@ -37,4 +37,7 @@ export const getHomePageConstants = () => ({
             multiplier: 1.9,
         }
     ],
+    REGEX_VALIDATION: {
+        NUMBER_REGEX: /([0-9]){4}/g,
+    }
 });

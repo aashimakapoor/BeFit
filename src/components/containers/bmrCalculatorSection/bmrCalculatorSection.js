@@ -18,12 +18,14 @@ class BMRCalculatorSection extends React.Component {
         this.state = {
             age: null,
             bmr: null,
-            gender: "Male",
+            gender: "",
             height: null,
             isCalculated: false,
             weight: null,
+            isDisbaled: true,
         }
         this.getCalorieRow = this.getCalorieRow.bind(this);
+        this.getBtnState = this.getBtnState.bind(this);
         this.handleOnCalculate = this.handleOnCalculate.bind(this);
         this.handleGoBack = this.handleGoBack.bind(this);
         this.onInputChange = this.onInputChange.bind(this);
@@ -43,8 +45,14 @@ class BMRCalculatorSection extends React.Component {
         )
     }
 
+    getBtnState = () => {
+        const { age, weight, height, gender } = this.state;
+
+        return !(age && weight && height && gender);
+    }
+
     handleOnCalculate = () => {
-        this.setState({isCalculated: true});
+        this.setState({ isCalculated: true });
         const { age, weight, height, gender } = this.state;  
         let bmr;
 
@@ -57,7 +65,7 @@ class BMRCalculatorSection extends React.Component {
     }
 
     handleGoBack = () => {
-        this.setState({isCalculated: false});
+        this.setState({ isCalculated: false });
     }
 
     onInputChange = (field, value) => {
@@ -67,8 +75,7 @@ class BMRCalculatorSection extends React.Component {
     }
 
     onRadioChange = (gender) => {
-        console.log(gender);
-        // this.setState({gender});
+        this.setState({gender});
     }
 
     renderBMRDetails = () => {
@@ -111,9 +118,9 @@ class BMRCalculatorSection extends React.Component {
     renderForm = () => {
         const { 
             bmrBtnText, 
-            genderText, 
+            genderText,
         } = getHomePageConstants();
-        const { age, weight, height } = this.state;
+        const { age, weight, height, isDisbaled } = this.state;
 
          return <form className={`${blockName}__form col-lg-5`}>
             <BFInputField 
@@ -160,8 +167,7 @@ class BMRCalculatorSection extends React.Component {
             <section className={`${blockName}__calculate-button`}>
                 <BFButton 
                     btnText={bmrBtnText} 
-                    hasIcon={true}
-                    iconClass="fab fa-leanpub"
+                    isDisabled={this.getBtnState()}
                     handleOnClick={this.handleOnCalculate}
                 />
             </section>

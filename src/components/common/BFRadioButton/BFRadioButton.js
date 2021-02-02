@@ -8,19 +8,18 @@ const blockName = "bf-radio-button";
 class BFRadioButton extends React.Component {
     constructor(props) {
         super(props);
+        this.onChange = this.onChange.bind(this);
     }
-    // onChange(e) {
-    //     const { onSelectRadio } = this.props;
-    //     console.log(e);
-    //     onSelectRadio(e.target.value);
-    // }
+    onChange(e) {
+        const { onRadioChange } = this.props;
+        onRadioChange(e.target.value);
+    }
     render() {
         const { 
             value,
             label,
             name,
             type,
-            onRadioChange,
          } = this.props;
 
         return (
@@ -31,7 +30,7 @@ class BFRadioButton extends React.Component {
                         name={name}
                         type={type}
                         value={value}
-                        onChange={onRadioChange}
+                        onChange={this.onChange}
                     />  
                     <label for={value} className={`${blockName}__label`} >{label}</label>
                 </span>

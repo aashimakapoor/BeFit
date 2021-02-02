@@ -1,6 +1,10 @@
 @import '../../../styles/index.scss';
 
 .bf-button {
+    &__is-disabled {
+        
+    }
+
     &__is-btn {
         font-weight: bold;;
         border: 3px solid $bf-color-black;

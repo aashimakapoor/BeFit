@@ -2,19 +2,30 @@
 import React from "react";
 import "./BFInputField.scss";
 import PropTypes from 'prop-types';
+import { getHomePageConstants } from '../../../constants/homePage';
 
 const blockName = "bf-input-field";
 
 class BFInputField extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            errorMessage: ''
+        }
     }
     onChange(e) {
+        let inputValue = e.target.value;
+        const { 
+            REGEX_VALIDATION,
+        } = getHomePageConstants();
         const { onInputChange, fieldName } = this.props;
 
-        onInputChange(fieldName,e.target.value);
+        // if(inputValue.match(REGEX_VALIDATION.NUMBER_REGEX)) {
+            onInputChange(fieldName, inputValue);
+        // }
     }
     render() {
+        const { errorMessage } = this.state;
         const { 
             bottomBorder,
             hasLabel,
@@ -39,6 +50,7 @@ class BFInputField extends React.Component {
                             type={type}
                         />
                     </section>
+                    <p className={`${blockName}__error-message`}>{errorMessage}</p>
                 </section>
         )
     }
